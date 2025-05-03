@@ -3,7 +3,13 @@ import 'dart:io';
 afficher();
     }
 void afficher(){
-  print(calculer(7, 3));
+  print("entrez un nombre : ");
+  int a = int.parse(stdin.readLineSync()!);
+  print("entre un autre nombre ");
+  int b = int.parse(stdin.readLineSync()!);
+  int somme = calculer(a, b);
+  calculer(a, b);
+  print(somme);
 }
 int  calculer(int a, int b){
   int somme =  a+b;
